@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#root{
+    max-width: 1520px;
+    width: 100%;
+    background: #CBCAF0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.box{
+    width: 100%;
+    background-color: #EEEEEE;
+    border-radius: 12px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 20px;
+}
+
+nav>button{
+    padding: 10px 15px;
+    background-color: blue;
+    border-radius: 8px;
+    border: none;
+    color: white;
+}
+
+nav>button:active{
+    color: black;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding: 60px;
+}
+
+.content__left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content__left>p{
+    font-size: 18px;
+}
+
+.main_title{
+    display: flex;	
+    flex-direction: column;
+    font-size: 48px;
+}
+
+.main_title>:first-child{
+color:  #5C5B8F;
+}
+
+.main_title>:nth-child(2){
+    
+    color: #161E64;
+}
+
+.main_title>:last-child{
+    
+    color:  #5E5BFB; 
+}
+
+label{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    background: #fff;
+    padding-left: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+label>input{
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+}
+
+label>button{
+height: 100%;
+border: none;
+background: #1536f3;
+color: #fff;
+padding: 10px;
+}
+
+
+.content__right{
+    display: flex;
+    gap: 15px;
+}
+
+.content__right>div{
+    width: 200px;
+    height: 300px;
+    border: solid;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__right>div>img{
+    height: 100%;
+}
+
+.img__left{
+transform: translate(0,50px);
+}
+.img__right{
+    transform: translate(0,-50px);
+
+}
